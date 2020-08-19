@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python:
+    container_name: docker-compose-pyper
+    build: .
+    image: docker-compose-pyper
+    volumes:
+      - ./src:/code/src
+    ports:
+      - "8000:8000"
