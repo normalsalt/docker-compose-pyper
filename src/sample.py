@@ -22,7 +22,7 @@ class CORSComponent(object):
                 ('Access-Control-Max-Age', '86400'), # 24 hours
             ))
 
-class QuoteResource:
+class FaithfulResource:
     def on_get(self, req, resp):
         r = pr.R()
         # https://www.r-tutor.com/elementary-statistics/quantitative-data/frequency-distribution-quantitative-data
@@ -33,4 +33,4 @@ class QuoteResource:
         resp.body = r("duration.freq")
 
 api = falcon.API(middleware=[CORSComponent()])
-api.add_route('/faithful', QuoteResource())
+api.add_route('/faithful', FaithfulResource())

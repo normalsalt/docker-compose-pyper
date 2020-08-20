@@ -12,12 +12,6 @@ Update `Dockerfile`.
 docker-compose run --rm python R --version
 ```
 
-## Python Package version
-
-- PypeR==1.1.2
-
-Update `requirements.txt`.
-
 # up
 
 ```
@@ -53,6 +47,14 @@ Update `requirements.txt`.
 ## documentation
 
 https://falcon.readthedocs.io/en/stable/
+
+# PypeR
+
+## PypeR version
+
+- PypeR==1.1.2
+
+Update `requirements.txt`.
 
 # build
 
